@@ -1,0 +1,10 @@
+fragment CommitDetails on CommitComment {
+    commit {
+      author {
+        name
+      }
+      message
+      committedDate
+      id
+    }
+}

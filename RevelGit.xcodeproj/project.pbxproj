@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F53D9C39237C5FED003D2BBF /* CommitDetails.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F53D9C38237C5FED003D2BBF /* CommitDetails.graphql */; };
+		F5729F6A237C5B870051D229 /* RepositoryDetails.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F5729F69237C5B870051D229 /* RepositoryDetails.graphql */; };
 		F5A342D7237B94EE00217C4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A342D6237B94EE00217C4A /* AppDelegate.swift */; };
 		F5A342DB237B94EE00217C4A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A342DA237B94EE00217C4A /* MainViewController.swift */; };
 		F5A342DE237B94EE00217C4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A342DC237B94EE00217C4A /* Main.storyboard */; };
@@ -21,6 +23,9 @@
 		F5F8A502237BB70E00DABC30 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = F5F8A501237BB70E00DABC30 /* schema.json */; };
 		F5F8A504237BB74700DABC30 /* UserDetails.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F5F8A503237BB74700DABC30 /* UserDetails.graphql */; };
 		F5F8A506237BC1ED00DABC30 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F8A505237BC1ED00DABC30 /* API.swift */; };
+		F5F8A50A237C263100DABC30 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F8A509237C263100DABC30 /* Logger.swift */; };
+		F5F8A50C237C287600DABC30 /* LogError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F8A50B237C287600DABC30 /* LogError.swift */; };
+		F5F8A510237C336900DABC30 /* UserInfo.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F5F8A50F237C336900DABC30 /* UserInfo.graphql */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F53D9C38237C5FED003D2BBF /* CommitDetails.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = CommitDetails.graphql; sourceTree = "<group>"; };
+		F5729F69237C5B870051D229 /* RepositoryDetails.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = RepositoryDetails.graphql; sourceTree = "<group>"; };
 		F5A342D3237B94EE00217C4A /* RevelGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RevelGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A342D6237B94EE00217C4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5A342DA237B94EE00217C4A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -58,8 +65,11 @@
 		F5A3430A237B963200217C4A /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		F5A34310237B9FF400217C4A /* ApolloManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloManager.swift; sourceTree = "<group>"; };
 		F5F8A501237BB70E00DABC30 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = schema.json; path = RevelGit/schema.json; sourceTree = SOURCE_ROOT; };
-		F5F8A503237BB74700DABC30 /* UserDetails.graphql */ = {isa = PBXFileReference; lastKnownFileType = file; name = UserDetails.graphql; path = RevelGit/UserDetails.graphql; sourceTree = SOURCE_ROOT; };
+		F5F8A503237BB74700DABC30 /* UserDetails.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; name = UserDetails.graphql; path = RevelGit/UserDetails.graphql; sourceTree = SOURCE_ROOT; };
 		F5F8A505237BC1ED00DABC30 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = RevelGit/API.swift; sourceTree = SOURCE_ROOT; };
+		F5F8A509237C263100DABC30 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		F5F8A50B237C287600DABC30 /* LogError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogError.swift; sourceTree = "<group>"; };
+		F5F8A50F237C336900DABC30 /* UserInfo.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = UserInfo.graphql; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				F5A34310237B9FF400217C4A /* ApolloManager.swift */,
+				F5F8A509237C263100DABC30 /* Logger.swift */,
+				F5F8A50B237C287600DABC30 /* LogError.swift */,
 			);
 			path = ApolloManager;
 			sourceTree = "<group>";
@@ -165,6 +177,9 @@
 				F5F8A505237BC1ED00DABC30 /* API.swift */,
 				F5F8A503237BB74700DABC30 /* UserDetails.graphql */,
 				F5F8A501237BB70E00DABC30 /* schema.json */,
+				F5F8A50F237C336900DABC30 /* UserInfo.graphql */,
+				F5729F69237C5B870051D229 /* RepositoryDetails.graphql */,
+				F53D9C38237C5FED003D2BBF /* CommitDetails.graphql */,
 			);
 			path = GraphQL;
 			sourceTree = "<group>";
@@ -280,12 +295,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5F8A510237C336900DABC30 /* UserInfo.graphql in Resources */,
 				F5F8A502237BB70E00DABC30 /* schema.json in Resources */,
 				F5A342E6237B94F200217C4A /* LaunchScreen.storyboard in Resources */,
 				F5A342E3237B94F200217C4A /* Assets.xcassets in Resources */,
 				F5F8A504237BB74700DABC30 /* UserDetails.graphql in Resources */,
 				F5A342DE237B94EE00217C4A /* Main.storyboard in Resources */,
 				F5A3430B237B963200217C4A /* MainViewController.xib in Resources */,
+				F53D9C39237C5FED003D2BBF /* CommitDetails.graphql in Resources */,
+				F5729F6A237C5B870051D229 /* RepositoryDetails.graphql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +352,8 @@
 				F5A34311237B9FF400217C4A /* ApolloManager.swift in Sources */,
 				F5A342DB237B94EE00217C4A /* MainViewController.swift in Sources */,
 				F5A342D7237B94EE00217C4A /* AppDelegate.swift in Sources */,
+				F5F8A50A237C263100DABC30 /* Logger.swift in Sources */,
+				F5F8A50C237C287600DABC30 /* LogError.swift in Sources */,
 				F5A342E1237B94EE00217C4A /* RevelGit.xcdatamodeld in Sources */,
 				F5F8A506237BC1ED00DABC30 /* API.swift in Sources */,
 			);

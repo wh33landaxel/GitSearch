@@ -17,7 +17,33 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="SYr-pY-bul">
+                    <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="SRF-mR-0Ba"/>
+                    </connections>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3f2-M6-Vfv">
+                    <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="aMk-1m-SgR"/>
+                        <outlet property="delegate" destination="-1" id="260-nW-NQw"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SYr-pY-bul" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="1W4-Nh-7mT"/>
+                <constraint firstItem="3f2-M6-Vfv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="6KI-Dk-7h0"/>
+                <constraint firstItem="3f2-M6-Vfv" firstAttribute="top" secondItem="SYr-pY-bul" secondAttribute="bottom" id="KNS-Gq-vSS"/>
+                <constraint firstItem="SYr-pY-bul" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Pvt-d8-WNp"/>
+                <constraint firstItem="SYr-pY-bul" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="eCe-og-HGT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="3f2-M6-Vfv" secondAttribute="bottom" id="gPq-eO-xbq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3f2-M6-Vfv" secondAttribute="trailing" id="vFT-w2-d8A"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="133" y="154"/>
         </view>

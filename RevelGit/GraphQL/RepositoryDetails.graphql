@@ -1,0 +1,13 @@
+fragment RepositoryDetails on Repository {
+      name
+      stargazers{
+        totalCount
+      }
+      watchers{
+        totalCount
+      }
+      primaryLanguage{
+        name
+      }
+    updatedAt
+}
