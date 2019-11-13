@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,11 @@
 		F5A342F1237B94F200217C4A /* RevelGitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A342F0237B94F200217C4A /* RevelGitTests.swift */; };
 		F5A342FC237B94F200217C4A /* RevelGitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A342FB237B94F200217C4A /* RevelGitUITests.swift */; };
 		F5A3430B237B963200217C4A /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5A3430A237B963200217C4A /* MainViewController.xib */; };
+		F5A3430E237B9F8000217C4A /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = F5A3430D237B9F8000217C4A /* Apollo */; };
+		F5A34311237B9FF400217C4A /* ApolloManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A34310237B9FF400217C4A /* ApolloManager.swift */; };
+		F5F8A502237BB70E00DABC30 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = F5F8A501237BB70E00DABC30 /* schema.json */; };
+		F5F8A504237BB74700DABC30 /* UserDetails.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F5F8A503237BB74700DABC30 /* UserDetails.graphql */; };
+		F5F8A506237BC1ED00DABC30 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F8A505237BC1ED00DABC30 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,10 @@
 		F5A342FB237B94F200217C4A /* RevelGitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevelGitUITests.swift; sourceTree = "<group>"; };
 		F5A342FD237B94F200217C4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5A3430A237B963200217C4A /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		F5A34310237B9FF400217C4A /* ApolloManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloManager.swift; sourceTree = "<group>"; };
+		F5F8A501237BB70E00DABC30 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = schema.json; path = RevelGit/schema.json; sourceTree = SOURCE_ROOT; };
+		F5F8A503237BB74700DABC30 /* UserDetails.graphql */ = {isa = PBXFileReference; lastKnownFileType = file; name = UserDetails.graphql; path = RevelGit/UserDetails.graphql; sourceTree = SOURCE_ROOT; };
+		F5F8A505237BC1ED00DABC30 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = RevelGit/API.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5A3430E237B9F8000217C4A /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +111,8 @@
 		F5A342D5237B94EE00217C4A /* RevelGit */ = {
 			isa = PBXGroup;
 			children = (
+				F5A34312237BA1F200217C4A /* GraphQL */,
+				F5A3430F237B9FD200217C4A /* ApolloManager */,
 				F5A34309237B961900217C4A /* Controllers */,
 				F5A342D6237B94EE00217C4A /* AppDelegate.swift */,
 				F5A342DC237B94EE00217C4A /* Main.storyboard */,
@@ -139,6 +151,24 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		F5A3430F237B9FD200217C4A /* ApolloManager */ = {
+			isa = PBXGroup;
+			children = (
+				F5A34310237B9FF400217C4A /* ApolloManager.swift */,
+			);
+			path = ApolloManager;
+			sourceTree = "<group>";
+		};
+		F5A34312237BA1F200217C4A /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				F5F8A505237BC1ED00DABC30 /* API.swift */,
+				F5F8A503237BB74700DABC30 /* UserDetails.graphql */,
+				F5F8A501237BB70E00DABC30 /* schema.json */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +176,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5A34300237B94F200217C4A /* Build configuration list for PBXNativeTarget "RevelGit" */;
 			buildPhases = (
+				F5C49BB8237BAC960050442F /* Generate Apollo GraphQL API */,
 				F5A342CF237B94EE00217C4A /* Sources */,
 				F5A342D0237B94EE00217C4A /* Frameworks */,
 				F5A342D1237B94EE00217C4A /* Resources */,
@@ -155,6 +186,9 @@
 			dependencies = (
 			);
 			name = RevelGit;
+			packageProductDependencies = (
+				F5A3430D237B9F8000217C4A /* Apollo */,
+			);
 			productName = RevelGit;
 			productReference = F5A342D3237B94EE00217C4A /* RevelGit.app */;
 			productType = "com.apple.product-type.application";
@@ -227,6 +261,9 @@
 				Base,
 			);
 			mainGroup = F5A342CA237B94EE00217C4A;
+			packageReferences = (
+				F5A3430C237B9F8000217C4A /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			productRefGroup = F5A342D4237B94EE00217C4A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -243,8 +280,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5F8A502237BB70E00DABC30 /* schema.json in Resources */,
 				F5A342E6237B94F200217C4A /* LaunchScreen.storyboard in Resources */,
 				F5A342E3237B94F200217C4A /* Assets.xcassets in Resources */,
+				F5F8A504237BB74700DABC30 /* UserDetails.graphql in Resources */,
 				F5A342DE237B94EE00217C4A /* Main.storyboard in Resources */,
 				F5A3430B237B963200217C4A /* MainViewController.xib in Resources */,
 			);
@@ -266,14 +305,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F5C49BB8237BAC960050442F /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F5A342CF237B94EE00217C4A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5A34311237B9FF400217C4A /* ApolloManager.swift in Sources */,
 				F5A342DB237B94EE00217C4A /* MainViewController.swift in Sources */,
 				F5A342D7237B94EE00217C4A /* AppDelegate.swift in Sources */,
 				F5A342E1237B94EE00217C4A /* RevelGit.xcdatamodeld in Sources */,
+				F5F8A506237BC1ED00DABC30 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,6 +666,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F5A3430C237B9F8000217C4A /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.19.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F5A3430D237B9F8000217C4A /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5A3430C237B9F8000217C4A /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		F5A342DF237B94EE00217C4A /* RevelGit.xcdatamodeld */ = {

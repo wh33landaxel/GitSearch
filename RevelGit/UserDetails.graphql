@@ -1,0 +1,47 @@
+query FindUser($id: String!){
+  search(query: $id, type: USER, last: 100) {
+    nodes {
+      ... on User {
+        avatarUrl
+        login
+      }
+    }
+  }
+}
+
+query FindRepos($login: String!){
+         user(login:$login) {
+        repositories(last:10) {
+        nodes {
+          name
+          stargazers{
+            totalCount
+          }
+          watchers{
+            totalCount
+          }
+          primaryLanguage{
+            name
+          }
+            updatedAt
+        }
+        }
+  }
+}
+
+query ListCommits($repo: String!, $owner:String!){
+         repository(name:$repo, owner:$owner) {
+        commitComments(last:10) {
+        nodes {
+          commit {
+            author {
+              name
+            }
+            message
+            committedDate
+            id
+          }
+        }
+      }
+      }
+}
