@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F5A342D7237B94EE00217C4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A342D6237B94EE00217C4A /* AppDelegate.swift */; };
-		F5A342D9237B94EE00217C4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A342D8237B94EE00217C4A /* SceneDelegate.swift */; };
-		F5A342DB237B94EE00217C4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A342DA237B94EE00217C4A /* ViewController.swift */; };
+		F5A342DB237B94EE00217C4A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A342DA237B94EE00217C4A /* MainViewController.swift */; };
 		F5A342DE237B94EE00217C4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A342DC237B94EE00217C4A /* Main.storyboard */; };
 		F5A342E1237B94EE00217C4A /* RevelGit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5A342DF237B94EE00217C4A /* RevelGit.xcdatamodeld */; };
 		F5A342E3237B94F200217C4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A342E2237B94F200217C4A /* Assets.xcassets */; };
 		F5A342E6237B94F200217C4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A342E4237B94F200217C4A /* LaunchScreen.storyboard */; };
 		F5A342F1237B94F200217C4A /* RevelGitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A342F0237B94F200217C4A /* RevelGitTests.swift */; };
 		F5A342FC237B94F200217C4A /* RevelGitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A342FB237B94F200217C4A /* RevelGitUITests.swift */; };
+		F5A3430B237B963200217C4A /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5A3430A237B963200217C4A /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,7 @@
 /* Begin PBXFileReference section */
 		F5A342D3237B94EE00217C4A /* RevelGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RevelGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A342D6237B94EE00217C4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F5A342D8237B94EE00217C4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F5A342DA237B94EE00217C4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5A342DA237B94EE00217C4A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F5A342DD237B94EE00217C4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5A342E0237B94EE00217C4A /* RevelGit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RevelGit.xcdatamodel; sourceTree = "<group>"; };
 		F5A342E2237B94F200217C4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		F5A342F7237B94F200217C4A /* RevelGitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevelGitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A342FB237B94F200217C4A /* RevelGitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevelGitUITests.swift; sourceTree = "<group>"; };
 		F5A342FD237B94F200217C4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5A3430A237B963200217C4A /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +101,8 @@
 		F5A342D5237B94EE00217C4A /* RevelGit */ = {
 			isa = PBXGroup;
 			children = (
+				F5A34309237B961900217C4A /* Controllers */,
 				F5A342D6237B94EE00217C4A /* AppDelegate.swift */,
-				F5A342D8237B94EE00217C4A /* SceneDelegate.swift */,
-				F5A342DA237B94EE00217C4A /* ViewController.swift */,
 				F5A342DC237B94EE00217C4A /* Main.storyboard */,
 				F5A342E2237B94F200217C4A /* Assets.xcassets */,
 				F5A342E4237B94F200217C4A /* LaunchScreen.storyboard */,
@@ -129,6 +128,15 @@
 				F5A342FD237B94F200217C4A /* Info.plist */,
 			);
 			path = RevelGitUITests;
+			sourceTree = "<group>";
+		};
+		F5A34309237B961900217C4A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F5A342DA237B94EE00217C4A /* MainViewController.swift */,
+				F5A3430A237B963200217C4A /* MainViewController.xib */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +246,7 @@
 				F5A342E6237B94F200217C4A /* LaunchScreen.storyboard in Resources */,
 				F5A342E3237B94F200217C4A /* Assets.xcassets in Resources */,
 				F5A342DE237B94EE00217C4A /* Main.storyboard in Resources */,
+				F5A3430B237B963200217C4A /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5A342DB237B94EE00217C4A /* ViewController.swift in Sources */,
+				F5A342DB237B94EE00217C4A /* MainViewController.swift in Sources */,
 				F5A342D7237B94EE00217C4A /* AppDelegate.swift in Sources */,
-				F5A342D9237B94EE00217C4A /* SceneDelegate.swift in Sources */,
 				F5A342E1237B94EE00217C4A /* RevelGit.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +449,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q4B5BT5R87;
 				INFOPLIST_FILE = RevelGit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +468,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q4B5BT5R87;
 				INFOPLIST_FILE = RevelGit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
