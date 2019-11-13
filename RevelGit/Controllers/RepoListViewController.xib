@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RepoListViewController" customModule="RevelGit" customModuleProvider="target">
             <connections>
+                <outlet property="repoTableView" destination="hNg-Sv-fOJ" id="NdL-NV-chs"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
