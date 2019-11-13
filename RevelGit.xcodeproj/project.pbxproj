@@ -13,6 +13,8 @@
 		F5846B01237C68EE00B450E6 /* RepoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5846AFF237C68EE00B450E6 /* RepoListViewController.xib */; };
 		F5846B06237C6A5F00B450E6 /* RepoCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5846B04237C6A5F00B450E6 /* RepoCellTableViewCell.swift */; };
 		F5846B07237C6A5F00B450E6 /* RepoCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5846B05237C6A5F00B450E6 /* RepoCellTableViewCell.xib */; };
+		F5846B0A237C6FE600B450E6 /* CommitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5846B08237C6FE600B450E6 /* CommitViewController.swift */; };
+		F5846B0B237C6FE600B450E6 /* CommitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5846B09237C6FE600B450E6 /* CommitViewController.xib */; };
 		F5A342D7237B94EE00217C4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A342D6237B94EE00217C4A /* AppDelegate.swift */; };
 		F5A342DB237B94EE00217C4A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A342DA237B94EE00217C4A /* MainViewController.swift */; };
 		F5A342DE237B94EE00217C4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A342DC237B94EE00217C4A /* Main.storyboard */; };
@@ -30,6 +32,11 @@
 		F5F8A50A237C263100DABC30 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F8A509237C263100DABC30 /* Logger.swift */; };
 		F5F8A50C237C287600DABC30 /* LogError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F8A50B237C287600DABC30 /* LogError.swift */; };
 		F5F8A510237C336900DABC30 /* UserInfo.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F5F8A50F237C336900DABC30 /* UserInfo.graphql */; };
+		F5FE75CD237C8095002DEB4A /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FE75CB237C8095002DEB4A /* UserTableViewCell.swift */; };
+		F5FE75CE237C8095002DEB4A /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5FE75CC237C8095002DEB4A /* UserTableViewCell.xib */; };
+		F5FE75D1237C82A9002DEB4A /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FE75D0237C82A9002DEB4A /* UIImageView+Extensions.swift */; };
+		F5FE75D4237C850C002DEB4A /* CommitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FE75D2237C850C002DEB4A /* CommitTableViewCell.swift */; };
+		F5FE75D5237C850C002DEB4A /* CommitTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5FE75D3237C850C002DEB4A /* CommitTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +63,8 @@
 		F5846AFF237C68EE00B450E6 /* RepoListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoListViewController.xib; sourceTree = "<group>"; };
 		F5846B04237C6A5F00B450E6 /* RepoCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCellTableViewCell.swift; sourceTree = "<group>"; };
 		F5846B05237C6A5F00B450E6 /* RepoCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoCellTableViewCell.xib; sourceTree = "<group>"; };
+		F5846B08237C6FE600B450E6 /* CommitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitViewController.swift; sourceTree = "<group>"; };
+		F5846B09237C6FE600B450E6 /* CommitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommitViewController.xib; sourceTree = "<group>"; };
 		F5A342D3237B94EE00217C4A /* RevelGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RevelGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A342D6237B94EE00217C4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5A342DA237B94EE00217C4A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +87,11 @@
 		F5F8A509237C263100DABC30 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		F5F8A50B237C287600DABC30 /* LogError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogError.swift; sourceTree = "<group>"; };
 		F5F8A50F237C336900DABC30 /* UserInfo.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = UserInfo.graphql; sourceTree = "<group>"; };
+		F5FE75CB237C8095002DEB4A /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		F5FE75CC237C8095002DEB4A /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		F5FE75D0237C82A9002DEB4A /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		F5FE75D2237C850C002DEB4A /* CommitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitTableViewCell.swift; sourceTree = "<group>"; };
+		F5FE75D3237C850C002DEB4A /* CommitTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommitTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +133,10 @@
 			children = (
 				F5846B04237C6A5F00B450E6 /* RepoCellTableViewCell.swift */,
 				F5846B05237C6A5F00B450E6 /* RepoCellTableViewCell.xib */,
+				F5FE75CB237C8095002DEB4A /* UserTableViewCell.swift */,
+				F5FE75CC237C8095002DEB4A /* UserTableViewCell.xib */,
+				F5FE75D2237C850C002DEB4A /* CommitTableViewCell.swift */,
+				F5FE75D3237C850C002DEB4A /* CommitTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -146,6 +164,7 @@
 		F5A342D5237B94EE00217C4A /* RevelGit */ = {
 			isa = PBXGroup;
 			children = (
+				F5FE75CF237C828E002DEB4A /* Extensions */,
 				F5846B02237C6A3B00B450E6 /* Views */,
 				F5A34312237BA1F200217C4A /* GraphQL */,
 				F5A3430F237B9FD200217C4A /* ApolloManager */,
@@ -185,6 +204,8 @@
 				F5A3430A237B963200217C4A /* MainViewController.xib */,
 				F5846AFE237C68EE00B450E6 /* RepoListViewController.swift */,
 				F5846AFF237C68EE00B450E6 /* RepoListViewController.xib */,
+				F5846B08237C6FE600B450E6 /* CommitViewController.swift */,
+				F5846B09237C6FE600B450E6 /* CommitViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -210,6 +231,14 @@
 				F53D9C38237C5FED003D2BBF /* CommitDetails.graphql */,
 			);
 			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		F5FE75CF237C828E002DEB4A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F5FE75D0237C82A9002DEB4A /* UIImageView+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,11 +352,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5FE75D5237C850C002DEB4A /* CommitTableViewCell.xib in Resources */,
 				F5F8A510237C336900DABC30 /* UserInfo.graphql in Resources */,
 				F5F8A502237BB70E00DABC30 /* schema.json in Resources */,
+				F5FE75CE237C8095002DEB4A /* UserTableViewCell.xib in Resources */,
 				F5846B07237C6A5F00B450E6 /* RepoCellTableViewCell.xib in Resources */,
 				F5A342E6237B94F200217C4A /* LaunchScreen.storyboard in Resources */,
 				F5A342E3237B94F200217C4A /* Assets.xcassets in Resources */,
+				F5846B0B237C6FE600B450E6 /* CommitViewController.xib in Resources */,
 				F5F8A504237BB74700DABC30 /* UserDetails.graphql in Resources */,
 				F5A342DE237B94EE00217C4A /* Main.storyboard in Resources */,
 				F5846B01237C68EE00B450E6 /* RepoListViewController.xib in Resources */,
@@ -380,12 +412,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5846B00237C68EE00B450E6 /* RepoListViewController.swift in Sources */,
+				F5846B0A237C6FE600B450E6 /* CommitViewController.swift in Sources */,
+				F5FE75CD237C8095002DEB4A /* UserTableViewCell.swift in Sources */,
 				F5846B06237C6A5F00B450E6 /* RepoCellTableViewCell.swift in Sources */,
 				F5A34311237B9FF400217C4A /* ApolloManager.swift in Sources */,
 				F5A342DB237B94EE00217C4A /* MainViewController.swift in Sources */,
+				F5FE75D1237C82A9002DEB4A /* UIImageView+Extensions.swift in Sources */,
 				F5A342D7237B94EE00217C4A /* AppDelegate.swift in Sources */,
 				F5F8A50A237C263100DABC30 /* Logger.swift in Sources */,
 				F5F8A50C237C287600DABC30 /* LogError.swift in Sources */,
+				F5FE75D4237C850C002DEB4A /* CommitTableViewCell.swift in Sources */,
 				F5A342E1237B94EE00217C4A /* RevelGit.xcdatamodeld in Sources */,
 				F5F8A506237BC1ED00DABC30 /* API.swift in Sources */,
 			);

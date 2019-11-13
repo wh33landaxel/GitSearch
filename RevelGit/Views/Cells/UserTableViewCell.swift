@@ -1,5 +1,5 @@
 //
-//  RepoCellTableViewCell.swift
+//  UserTableViewCell.swift
 //  RevelGit
 //
 //  Created by Axel Nunez on 11/13/19.
@@ -8,15 +8,10 @@
 
 import UIKit
 
-class RepoCellTableViewCell: UITableViewCell {
-    @IBOutlet weak var repoNameLabel: UILabel!
-    @IBOutlet weak var starCountLabel: UILabel!
-    @IBOutlet weak var watcherCountLabel: UILabel!
-    @IBOutlet weak var languageLabel: UILabel!
-    @IBOutlet weak var updateDateLabel: UILabel!
-    
-    @IBOutlet weak var descriptionLabel: UILabel!
-    
+class UserTableViewCell: UITableViewCell {
+
+    @IBOutlet weak var profilePicture: UIImageView!
+    @IBOutlet weak var userNameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

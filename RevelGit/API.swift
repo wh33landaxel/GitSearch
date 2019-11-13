@@ -732,6 +732,7 @@ public struct RepositoryDetails: GraphQLFragment {
     fragment RepositoryDetails on Repository {
       __typename
       name
+      description
       stargazers {
         __typename
         totalCount
@@ -753,6 +754,7 @@ public struct RepositoryDetails: GraphQLFragment {
   public static let selections: [GraphQLSelection] = [
     GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
     GraphQLField("name", type: .nonNull(.scalar(String.self))),
+    GraphQLField("description", type: .scalar(String.self)),
     GraphQLField("stargazers", type: .nonNull(.object(Stargazer.selections))),
     GraphQLField("watchers", type: .nonNull(.object(Watcher.selections))),
     GraphQLField("primaryLanguage", type: .object(PrimaryLanguage.selections)),
@@ -765,8 +767,8 @@ public struct RepositoryDetails: GraphQLFragment {
     self.resultMap = unsafeResultMap
   }
 
-  public init(name: String, stargazers: Stargazer, watchers: Watcher, primaryLanguage: PrimaryLanguage? = nil, updatedAt: String) {
-    self.init(unsafeResultMap: ["__typename": "Repository", "name": name, "stargazers": stargazers.resultMap, "watchers": watchers.resultMap, "primaryLanguage": primaryLanguage.flatMap { (value: PrimaryLanguage) -> ResultMap in value.resultMap }, "updatedAt": updatedAt])
+  public init(name: String, description: String? = nil, stargazers: Stargazer, watchers: Watcher, primaryLanguage: PrimaryLanguage? = nil, updatedAt: String) {
+    self.init(unsafeResultMap: ["__typename": "Repository", "name": name, "description": description, "stargazers": stargazers.resultMap, "watchers": watchers.resultMap, "primaryLanguage": primaryLanguage.flatMap { (value: PrimaryLanguage) -> ResultMap in value.resultMap }, "updatedAt": updatedAt])
   }
 
   public var __typename: String {
@@ -785,6 +787,16 @@ public struct RepositoryDetails: GraphQLFragment {
     }
     set {
       resultMap.updateValue(newValue, forKey: "name")
+    }
+  }
+
+  /// The description of the repository.
+  public var description: String? {
+    get {
+      return resultMap["description"] as? String
+    }
+    set {
+      resultMap.updateValue(newValue, forKey: "description")
     }
   }
 

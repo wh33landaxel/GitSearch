@@ -16,6 +16,9 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "User Search"
+        
+        usersTableView.register(UINib(nibName: String(describing:UserTableViewCell.self), bundle: nil), forCellReuseIdentifier: "UserCell")
+
         // Do any additional setup after loading the view.
         
     }
@@ -28,13 +31,22 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
-        cell.textLabel?.text = users[indexPath.row].login
-        return cell
+        
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath) as? UserTableViewCell {
+            
+            cell.profilePicture.downloaded(from: users[indexPath.row].avatarUrl)
+            cell.userNameLabel.text = users[indexPath.row].login
+            return cell
+        }
+        
+        
+        return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.navigationController?.pushViewController(RepoListViewController(), animated: true)
+        let vc = RepoListViewController()
+        vc.ownerName = users[indexPath.row].login
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

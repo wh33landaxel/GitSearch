@@ -1,5 +1,5 @@
 //
-//  RepoCellTableViewCell.swift
+//  CommitTableViewCell.swift
 //  RevelGit
 //
 //  Created by Axel Nunez on 11/13/19.
@@ -8,14 +8,11 @@
 
 import UIKit
 
-class RepoCellTableViewCell: UITableViewCell {
-    @IBOutlet weak var repoNameLabel: UILabel!
-    @IBOutlet weak var starCountLabel: UILabel!
-    @IBOutlet weak var watcherCountLabel: UILabel!
-    @IBOutlet weak var languageLabel: UILabel!
-    @IBOutlet weak var updateDateLabel: UILabel!
-    
-    @IBOutlet weak var descriptionLabel: UILabel!
+class CommitTableViewCell: UITableViewCell {
+    @IBOutlet weak var commitMessage: UILabel!
+    @IBOutlet weak var committer: UILabel!
+    @IBOutlet weak var hashLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -1,5 +1,6 @@
 fragment RepositoryDetails on Repository {
       name
+      description
       stargazers{
         totalCount
       }
