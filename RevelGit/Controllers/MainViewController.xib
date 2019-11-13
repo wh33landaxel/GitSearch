@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="RevelGit" customModuleProvider="target">
             <connections>
+                <outlet property="usersTableView" destination="3f2-M6-Vfv" id="U2B-Kw-CiG"/>
                 <outlet property="view" destination="iN0-l3-epB" id="RF3-zi-RvB"/>
             </connections>
         </placeholder>

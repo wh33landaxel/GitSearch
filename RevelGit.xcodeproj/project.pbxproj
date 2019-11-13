@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		F53D9C39237C5FED003D2BBF /* CommitDetails.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F53D9C38237C5FED003D2BBF /* CommitDetails.graphql */; };
 		F5729F6A237C5B870051D229 /* RepositoryDetails.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F5729F69237C5B870051D229 /* RepositoryDetails.graphql */; };
+		F5846B00237C68EE00B450E6 /* RepoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5846AFE237C68EE00B450E6 /* RepoListViewController.swift */; };
+		F5846B01237C68EE00B450E6 /* RepoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5846AFF237C68EE00B450E6 /* RepoListViewController.xib */; };
+		F5846B06237C6A5F00B450E6 /* RepoCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5846B04237C6A5F00B450E6 /* RepoCellTableViewCell.swift */; };
+		F5846B07237C6A5F00B450E6 /* RepoCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5846B05237C6A5F00B450E6 /* RepoCellTableViewCell.xib */; };
 		F5A342D7237B94EE00217C4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A342D6237B94EE00217C4A /* AppDelegate.swift */; };
 		F5A342DB237B94EE00217C4A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A342DA237B94EE00217C4A /* MainViewController.swift */; };
 		F5A342DE237B94EE00217C4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A342DC237B94EE00217C4A /* Main.storyboard */; };
@@ -48,6 +52,10 @@
 /* Begin PBXFileReference section */
 		F53D9C38237C5FED003D2BBF /* CommitDetails.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = CommitDetails.graphql; sourceTree = "<group>"; };
 		F5729F69237C5B870051D229 /* RepositoryDetails.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = RepositoryDetails.graphql; sourceTree = "<group>"; };
+		F5846AFE237C68EE00B450E6 /* RepoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListViewController.swift; sourceTree = "<group>"; };
+		F5846AFF237C68EE00B450E6 /* RepoListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoListViewController.xib; sourceTree = "<group>"; };
+		F5846B04237C6A5F00B450E6 /* RepoCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCellTableViewCell.swift; sourceTree = "<group>"; };
+		F5846B05237C6A5F00B450E6 /* RepoCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoCellTableViewCell.xib; sourceTree = "<group>"; };
 		F5A342D3237B94EE00217C4A /* RevelGit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RevelGit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A342D6237B94EE00217C4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5A342DA237B94EE00217C4A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +106,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F5846B02237C6A3B00B450E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F5846B03237C6A4700B450E6 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F5846B03237C6A4700B450E6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F5846B04237C6A5F00B450E6 /* RepoCellTableViewCell.swift */,
+				F5846B05237C6A5F00B450E6 /* RepoCellTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		F5A342CA237B94EE00217C4A = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +146,7 @@
 		F5A342D5237B94EE00217C4A /* RevelGit */ = {
 			isa = PBXGroup;
 			children = (
+				F5846B02237C6A3B00B450E6 /* Views */,
 				F5A34312237BA1F200217C4A /* GraphQL */,
 				F5A3430F237B9FD200217C4A /* ApolloManager */,
 				F5A34309237B961900217C4A /* Controllers */,
@@ -157,6 +183,8 @@
 			children = (
 				F5A342DA237B94EE00217C4A /* MainViewController.swift */,
 				F5A3430A237B963200217C4A /* MainViewController.xib */,
+				F5846AFE237C68EE00B450E6 /* RepoListViewController.swift */,
+				F5846AFF237C68EE00B450E6 /* RepoListViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -297,10 +325,12 @@
 			files = (
 				F5F8A510237C336900DABC30 /* UserInfo.graphql in Resources */,
 				F5F8A502237BB70E00DABC30 /* schema.json in Resources */,
+				F5846B07237C6A5F00B450E6 /* RepoCellTableViewCell.xib in Resources */,
 				F5A342E6237B94F200217C4A /* LaunchScreen.storyboard in Resources */,
 				F5A342E3237B94F200217C4A /* Assets.xcassets in Resources */,
 				F5F8A504237BB74700DABC30 /* UserDetails.graphql in Resources */,
 				F5A342DE237B94EE00217C4A /* Main.storyboard in Resources */,
+				F5846B01237C68EE00B450E6 /* RepoListViewController.xib in Resources */,
 				F5A3430B237B963200217C4A /* MainViewController.xib in Resources */,
 				F53D9C39237C5FED003D2BBF /* CommitDetails.graphql in Resources */,
 				F5729F6A237C5B870051D229 /* RepositoryDetails.graphql in Resources */,
@@ -349,6 +379,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5846B00237C68EE00B450E6 /* RepoListViewController.swift in Sources */,
+				F5846B06237C6A5F00B450E6 /* RepoCellTableViewCell.swift in Sources */,
 				F5A34311237B9FF400217C4A /* ApolloManager.swift in Sources */,
 				F5A342DB237B94EE00217C4A /* MainViewController.swift in Sources */,
 				F5A342D7237B94EE00217C4A /* AppDelegate.swift in Sources */,
